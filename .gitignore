@@ -1,0 +1,14 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.bin
+a.out # Default GCC output
+
+# Editor backup files
+*~
+*.swp
+.vscode/ # If using VS Code and want to ignore editor-specific settings
