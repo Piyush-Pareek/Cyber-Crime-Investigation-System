@@ -29,7 +29,7 @@ void add_new_case() {
     printf("Enter priority level: ");
     scanf("%d", &new_case.priority);
 
-    new_case.case_id = case_count;
+    new_case.case_id = case_count+1;
     // Store in global array
     case_list[case_count++] = new_case;
 
