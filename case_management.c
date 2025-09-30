@@ -26,13 +26,18 @@ void add_new_case() {
      // remove newline
     new_case.description[strcspn(new_case.description, "\n")] = '\0';
 
-    printf("Enter priority level (1-High, 2-Medium, 3-Low): ");
+    printf("Enter priority level: ");
     scanf("%d", &new_case.priority);
 
+    new_case.case_id = case_count;
     // Store in global array
     case_list[case_count++] = new_case;
 
     printf("New case added successfully!\n");
+    printf("Title : %s", new_case.title);
+    printf("Case id: %d", new_case.case_id);
+    // printf("Description: %s", new_case.description);
+
 }
 
 // Optional: display all cases
@@ -47,5 +52,6 @@ void display_cases() {
         printf("Title: %s\n", case_list[i].title);
         printf("Description: %s\n", case_list[i].description);
         printf("Priority: %d\n", case_list[i].priority);
+        printf("Case ID: %d\n", case_list[i].case_id);
     }
 }

@@ -9,7 +9,8 @@
 typedef struct {
     char title[MAX_TITLE];
     char description[MAX_DESC];
-    int priority;  // 1 = High, 2 = Medium, 3 = Low
+    int priority;
+    int case_id;
 } Case;
 
 // Global array and counter
