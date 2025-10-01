@@ -13,7 +13,7 @@ void add_new_case() {
         return;
     }
 
-    Case new_case;
+    Case new_case; // Temporary case variable
 
     printf("Enter case title: ");
     getchar();
@@ -24,18 +24,18 @@ void add_new_case() {
     printf("Enter case description: ");
     fgets(new_case.description, MAX_DESC, stdin);
      // remove newline
-    new_case.description[strcspn(new_case.description, "\n")] = '\0';
+    new_case.description[strcspn(new_case.description, "\n")] = '\0'; 
 
     printf("Enter priority level: ");
     scanf("%d", &new_case.priority);
 
-    new_case.case_id = case_count;
+    new_case.case_id = case_count+1; // Simple incremental ID
     // Store in global array
     case_list[case_count++] = new_case;
 
     printf("New case added successfully!\n");
-    printf("Title : %s", new_case.title);
-    printf("Case id: %d", new_case.case_id);
+    printf("Title : %s\n", new_case.title);
+    printf("Case id: %d\n", new_case.case_id);
     // printf("Description: %s", new_case.description);
 
 }
