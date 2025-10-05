@@ -8,6 +8,7 @@ void show_main_menu() {
     printf("2. Display All Cases\n");
     printf("3. Add Evidence to a Case\n"); 
     printf("4. Display All Evidence\n");  
+    printf("5. Find Evidence By ID\n");  
     printf("9. Exit\n");
     printf("Enter your choice: ");
 }
@@ -28,10 +29,10 @@ int main() {
             case 3:
                 add_evidence(); 
                 break;
-            case 4:
-                display_all_evidence(); 
+            case 5:
+                find_evidence_by_id(); 
                 break;
-   
+            
             case 9:
                 printf("Exiting system.\n");
                 return 0;
