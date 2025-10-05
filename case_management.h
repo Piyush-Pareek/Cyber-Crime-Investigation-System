@@ -19,6 +19,10 @@ extern int case_count;
 
 // Function declarations
 void add_new_case();
-void display_cases(); // Optional helper to show all cases
+//void display_cases();
+void swap(Case *a, Case *b);
+void heapify_up(int index);
+void heapify_down(int index);
+void process_highest_priority_case();
 
 #endif
