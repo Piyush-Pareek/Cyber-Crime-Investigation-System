@@ -2,7 +2,7 @@
 #define evidence_management_h
 
 #include "case_management.h" // for case structure definition
-#define MAX_EVIDENCE 100 // Maximum number of evidence items
+#define HASH_TABLE_SIZE 100 // Size of the hash table for cases
 #define MAX_EVIDENCE_CONTENT 1000 // Maximum length of evidence description
 #define MAX_EVIDENCE_TYPE 50 // Maximum length of evidence type
 // structure to hold evidence information
@@ -15,6 +15,7 @@ typedef struct{
 }Evidence;
 // functions 
 void add_evidence();
+void find_evidence_by_id(); //to find evidence by case ID
 void display_all_evidence(); //to display all evidence items
 
 #endif
