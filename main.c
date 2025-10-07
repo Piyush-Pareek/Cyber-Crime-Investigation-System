@@ -23,9 +23,9 @@ int main() {
             case 1:
                 add_new_case();
                 break;
-            case 2:
-                display_cases();
-                break;
+            // case 2:
+            //     display_cases();
+            //     break;
             case 3:
                 add_evidence(); 
                 break;

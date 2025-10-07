@@ -20,8 +20,9 @@ void add_new_case() {
     scanf(" %[^\n]", new_case.description);
     printf("Enter priority (higher number -> higher priority): ");
     scanf("%d", &new_case.priority);
+    getchar();
     new_case.case_id = case_count+1;
-    printf("Case id: ", new_case.case_id);
+    printf("Case id: %d", new_case.case_id);
 
     case_list[case_count] = new_case;
     case_count++;
