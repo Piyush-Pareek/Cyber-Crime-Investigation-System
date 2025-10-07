@@ -1,0 +1,41 @@
+Hey Team, great meeting earlier! I've now pushed the initial project skeleton to our GitHub repository. This means all the empty .c and .h files are in place, and we are officially ready to start coding! 🔥
+
+Here's our plan of action to make sure we stay on track for our October 13th deadline.
+
+1. Your First Action: Get the Code & Start Your Task
+Everyone, please do this as your first step:
+
+Pull the latest files: Open your terminal, navigate to the project folder, and run git pull origin main. This will download the new C files.
+
+Create your branch: Follow the instructions in the README.md to create your personal feature branch (e.g., git checkout -b feature/yourname/add-function).
+
+Update the Project Board: As soon as you've created your branch, move your assigned task from the "Ready" column to "In Progress" on our GitHub Project Board. This shows you've started.
+
+2. Our Simple Coding Rules
+To keep our code clean and easy for everyone to read, let's stick to these simple rules:
+
+Naming: Use snake_case_for_functions_and_variables() and PascalCaseForStructs.
+
+Comments: Please write a short comment above each function explaining what it does.
+
+Indentation: Use 4 spaces for tabs.
+
+3. The "One-Line Daily Check-in"
+Let's use this chat to stay in sync. Each day you plan to work, just send a quick message like:
+
+"Planning to work on the add_evidence hash function for an hour today."
+
+"I'm stuck on a pointer issue in my add_case function, has anyone seen this before?"
+
+This keeps us all accountable and makes it easy to ask for help.
+
+4. Our Goal for This Week (By Friday, Oct 3rd)
+Our mission is to have the first version of all three "add" functions completed and merged.
+
+Bhavya: add_new_case() implemented.
+
+Vansh: add_evidence() implemented.
+
+Piyush: add_suspect() implemented.
+
+Let's aim to have all three Pull Requests created, reviewed, and merged by Friday evening. This will put us in a fantastic position for the week after.
