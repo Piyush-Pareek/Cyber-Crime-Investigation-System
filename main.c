@@ -5,12 +5,13 @@
 void show_main_menu() {
     printf("\n--- Cyber Crime Investigation System ---\n");
     printf("1. Add a New Case\n");
-    printf("2. Display All Cases\n");
-    printf("3. Add Evidence to a Case\n"); 
-    printf("4. Display All Evidence\n");  
-    printf("5. Find Evidence By ID\n");  
-    printf("9. Exit\n");
-    printf("Enter your choice: ");
+    // printf("2. Display All Cases\n");
+    printf("3. Process Highest Priority Case\n");
+    printf("4. Add Evidence to a Case\n"); 
+    printf("5. Display All Evidence\n");  
+    printf("6. Find Evidence By ID\n");  
+    printf("7. Exit\n");
+    printf("\nEnter your choice: ");
 }
 // Main function
 int main() {
@@ -26,14 +27,19 @@ int main() {
             // case 2:
             //     display_cases();
             //     break;
-            case 3:
+            case 3: 
+                process_highest_priority_case();
+                break;
+            case 4:
                 add_evidence(); 
                 break;
             case 5:
-                find_evidence_by_id(); 
+                display_all_evidence(); 
                 break;
-            
-            case 9:
+            case 6:                
+                find_evidence_by_id(); 
+                break;            
+            case 7:
                 printf("Exiting system.\n");
                 return 0;
             default:
