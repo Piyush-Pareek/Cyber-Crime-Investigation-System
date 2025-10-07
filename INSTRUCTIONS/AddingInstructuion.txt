@@ -1,0 +1,71 @@
+==============================
+INSTRUCTIONS FOR GITHUB WORKFLOW
+==============================
+
+This file explains how to add new files, update files, and push changes to the GitHub repository.
+
+---
+
+STEP 1: Check Your Current Branch
+--------------------------------
+1. Open the terminal in your project folder.
+2. Run:
+   git branch
+3. The branch with * is your current branch (usually 'main').
+
+---
+
+STEP 2: Adding a New File
+-------------------------
+1. Create your file locally (e.g., todo.html).
+2. Stage the file to track it in Git:
+   git add todo.html
+   (or to add all new/modified files: git add .)
+3. Commit your changes with a descriptive message:
+   git commit -m "Add todo.html page"
+4. Push to GitHub:
+   git push
+5. Verify on GitHub that the file appears in the repository.
+
+---
+
+STEP 3: Updating an Existing File
+---------------------------------
+1. Modify your local file as needed (e.g., change content in todo.html).
+2. Stage the updated file:
+   git add todo.html
+   (or git add . for all changes)
+3. Commit the update with a message:
+   git commit -m "Update todo.html with new features"
+4. Push to GitHub:
+   git push
+5. Verify on GitHub that your changes are reflected.
+
+---
+
+STEP 4: Cloning the Repo (for teammates)
+----------------------------------------
+1. To clone the repository:
+   git clone https://github.com/yourusername/your-repo.git
+2. Navigate into the repo folder:
+   cd your-repo
+3. Make changes, commit, and push as explained above.
+
+---
+
+STEP 5: Pulling Latest Changes
+------------------------------
+1. Before making changes, always pull the latest updates:
+   git pull
+2. This ensures you have the most recent version of the project and avoids conflicts.
+
+---
+
+TIP: Descriptive commit messages help everyone understand what changes were made.
+TIP: Always push your changes to GitHub after committing.
+TIP: If your branch is new, you may need:
+   git push -u origin <branch_name>
+
+---
+
+This workflow ensures that all team members can add, update, and track files safely in the repository.
