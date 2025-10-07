@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "case_management.h"
 #include "evidence_management.h" 
 // Menu functions
 void show_main_menu() {
+    // system("clear");
     printf("\n--- Cyber Crime Investigation System ---\n");
     printf("1. Add a New Case\n");
     // printf("2. Display All Cases\n");
@@ -19,7 +21,7 @@ int main() {
     while (1) {
         show_main_menu();
         scanf("%d", &choice);
-
+        system("clear");
         switch (choice) {
             case 1:
                 add_new_case();
