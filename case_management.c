@@ -22,7 +22,6 @@ void add_new_case() {
     scanf("%d", &new_case.priority);
     getchar();
     new_case.case_id = case_count+1;
-    // printf("Case id: %d", new_case.case_id);
 
     case_list[case_count] = new_case;
     case_count++;
@@ -30,11 +29,10 @@ void add_new_case() {
     //calling heapify_up
     heapify_up(case_count - 1);
 
-    printf("Case added successfully with priority %d!\n", new_case.priority);
-    // printf("\nNew case added successfully!\n");
+    //displaying the essentials
+    printf("\nCase added successfully with priority %d!\n", new_case.priority);
     printf("Title : %s", new_case.title);
     printf("\nCase id: %d\n", new_case.case_id);
-    // printf("Description: %s", new_case.description);
 }
 
 /*
@@ -109,6 +107,6 @@ void process_highest_priority_case() {
     case_list[0] = case_list[case_count - 1];
     case_count--;
 
-    // fix heap
+    // fix heap again
     heapify_down(0);
 }
